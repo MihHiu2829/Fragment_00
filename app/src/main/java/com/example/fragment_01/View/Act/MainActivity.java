@@ -39,7 +39,10 @@ public class MainActivity extends AppCompatActivity implements OnMainCallBack {
     private void gotoM002(Object data) {
                 m002_detailFrag frg = new m002_detailFrag() ;
                 frg.setData(data) ;
-                getSupportFragmentManager().beginTransaction().replace(R.id.Ln_Main,frg,frg.getTag()).commit() ;
+                getSupportFragmentManager()
+                        .beginTransaction()
+                        .addToBackStack(null)
+                        .replace(R.id.Ln_Main,frg,frg.getTag()).commit() ;
     }
 
     private void gotoM001(){
