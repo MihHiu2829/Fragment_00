@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:text="Animal in layout"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:padding="10dp"
+        android:layout_height="wrap_content"/>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_marginTop="40dp"
+        android:layout_marginHorizontal="10dp"
+        android:layout_height="100dp">
+
+        <ImageView
+            android:layout_width="100dp"
+            android:padding="10dp"
+            android:src="@drawable/icon_bird"
+            android:id="@+id/iv_bird"
+            android:contentDescription="Con Trym"
+            android:layout_height="match_parent"/>
+        <ImageView
+            android:layout_width="100dp"
+            android:padding="10dp"
+            android:contentDescription="Trym cánh cụt"
+            android:src="@drawable/icon_penguin"
+            android:id="@+id/iv_penguin"
+            android:layout_height="match_parent"/>
+        <ImageView
+            android:layout_width="100dp"
+            android:padding="10dp"
+            android:contentDescription="con Gà"
+            android:src="@drawable/icon_checken"
+            android:id="@+id/iv_checken"
+            android:layout_height="match_parent"/>
+        <ImageView
+            android:layout_width="100dp"
+            android:padding="10dp"
+            android:contentDescription="con chó"
+            android:src="@drawable/icon_dog"
+            android:id="@+id/iv_dog"
+            android:layout_height="match_parent"/>
+    </TableRow>
+
+    <LinearLayout
+        android:layout_width="350dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:layout_height="200dp">
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="Abc"
+                android:id="@+id/tv_content_animal"
+                android:textStyle="bold"
+                android:textSize="30dp"
+                android:lineSpacingExtra="5dp"
+                android:layout_height="wrap_content"/>
+        </ScrollView>
+    </LinearLayout>
+    <Button
+        android:layout_width="wrap_content"
+        android:text="click to more"
+        android:enabled="false"
+        android:layout_marginTop="30dp"
+        android:layout_gravity="center"
+        android:id="@+id/bt_detail"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>
